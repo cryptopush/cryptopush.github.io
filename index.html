@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crypto Push</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "ebb98713-cdd5-469f-87d8-fc17f7e9bdf4",
+    });
+  });
+</script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Crypto Push</h1>
+      <nav>
+        <a href="#" class="text-white hover:underline mx-2">Home</a>
+        <a href="#" class="text-white hover:underline mx-2">Markets</a>
+        <a href="#" class="text-white hover:underline mx-2">News</a>
+        <a href="#" class="text-white hover:underline mx-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto p-6">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Welcome to Crypto Push</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Stay updated with the latest trends in cryptocurrency markets. Explore market insights, price alerts, and breaking news — all in one place.
+      </p>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold mb-4">Trending Coins</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-medium mb-2">Bitcoin (BTC)</h3>
+          <p class="text-green-600 font-semibold">$65,400</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-medium mb-2">Ethereum (ETH)</h3>
+          <p class="text-green-600 font-semibold">$3,250</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+          <h3 class="text-lg font-medium mb-2">Solana (SOL)</h3>
+          <p class="text-green-600 font-semibold">$145</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Latest News</h2>
+      <ul class="list-disc list-inside text-gray-700">
+        <li>Bitcoin reaches new all-time high amidst global market surge.</li>
+        <li>Ethereum 2.0 upgrade nearing completion, boosting scalability.</li>
+        <li>Solana ecosystem attracts record-breaking number of developers.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-gray-200 text-center p-4 mt-8 text-sm text-gray-600">
+    &copy; 2025 Crypto Push. All rights reserved.
+  </footer>
+
+</body>
+</html>
